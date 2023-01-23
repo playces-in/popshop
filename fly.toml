@@ -7,11 +7,10 @@ processes = []
   release_command = "bin/release"
 
 [env]
-  RAILS_DEFAULT_URL = "https://popshop.itskai.me"
+  RAILS_DEFAULT_URL = "https://shop.playces.in"
   RAILS_STORAGE_SERVICE = "test"
   RAILS_MAILER_FROM="Playces <robot@playces.in>"
   RAILS_MAILER_REPLY_TO="Playes Support <support@playces.in>"
-  POSTGRES_URL = "postgresql://top2.nearest.of.itskai-db.internal"
   RAILS_MAILER = "mailgun"
   POSTGRES_USERNAME = "popshop"
   POSTGRES_DATABASE = "popshop"
