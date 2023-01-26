@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import { Header, Image } from "@mantine/core";
+import { Header, Image, Text } from "@mantine/core";
 
 import Menu from "./AppMenu";
 import logoPath from "~/assets/images/logo.png";
@@ -13,7 +13,7 @@ export type AppHeaderProps = {
 
 const AppHeader: FC<AppHeaderProps> = ({ viewer }) => (
   <Header
-    height={42}
+    height={50}
     p={6}
     sx={{
       display: "flex",
@@ -27,22 +27,26 @@ const AppHeader: FC<AppHeaderProps> = ({ viewer }) => (
       variant="subtle"
       leftIcon={<Image src={logoPath} width={20} height={20} />}
       compact
-      p={4}
+      px={6}
+      py={2}
       h="unset"
-      styles={({ colors, fontSizes }) => ({
+      styles={({ colors }) => ({
         root: {
-          fontSize: fontSizes.md,
-          fontWeight: 700,
           "&:hover": {
             backgroundColor: colors.gray[1],
           },
         },
         leftIcon: {
-          marginRight: 4,
+          marginRight: 6,
         },
       })}
     >
-      Popshop
+      <Box>
+        <Text weight={700}>Popshop</Text>
+        <Text size={11} weight={400} color="dimmed" mt={-3.5}>
+          By Playces
+        </Text>
+      </Box>
     </Button>
     <Menu {...{ viewer }} />
   </Header>

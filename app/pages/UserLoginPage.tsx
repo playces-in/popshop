@@ -16,7 +16,7 @@ const UserLoginPage: PageComponent<UserLoginPageProps> = () => (
         <Title size="h3">Sign In</Title>
         <Text size="sm" color="dimmed">
           Welcome back to{" "}
-          <Text color="dark.4" weight={600} span>
+          <Text color="dark.3" weight={600} span>
             Popshop
           </Text>
         </Text>

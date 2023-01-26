@@ -24,9 +24,13 @@ const HomePage: PageComponent<HomePageProps> = ({ data: { viewer } }) => (
     <Stack spacing="sm" align="center">
       <Image src={logoPath} width={100} height={100} />
       <Stack spacing={4} align="center">
-        <Title size={32}>Welcome to Popshop!</Title>
+        <Title>Welcome to Popshop!</Title>
         <Text color="dark.3" sx={{ alignSelf: "center" }}>
-          Popshop is a really simple online store.
+          A really simple online store, made by{" "}
+          <Anchor href="https://playces.in" target="_blank" color="indigo">
+            Playces
+          </Anchor>
+          .
         </Text>
       </Stack>
     </Stack>

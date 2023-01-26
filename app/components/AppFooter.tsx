@@ -15,11 +15,22 @@ const AppFooter: FC = () => {
       }}
     >
       <Center w="100%">
-        <Group spacing={0}>
-          <Text size="xs" weight={500} color="dark.3">
-            Made with
-          </Text>
+        <Group
+          spacing={0}
+          sx={({ fontSizes, colors }) => ({
+            fontSize: fontSizes.xs,
+            fontWeight: 500,
+            color: colors.gray[6],
+          })}
+        >
+          <Text>Made with</Text>
           <Image src={lovePath} width={24} height={24} />
+          <Text>
+            by{" "}
+            <Anchor href="https://playces.in" target="_blank" color="indigo">
+              Playces
+            </Anchor>
+          </Text>
         </Group>
       </Center>
     </Footer>
